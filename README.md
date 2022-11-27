@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+This is done by React + Hardhat + Infura + ...
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Following the below to install dependencies
 
-## Available Scripts
+---- React App ----
+Install React App
+npx create-react-app nft-mint-site
 
-In the project directory, you can run:
+Install Chakra UI
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
-### `npm start`
+Install Ethers
+npm i ethers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install Wagmi
+npm i wagmi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install Buffer
+npm i buffer
 
-### `npm test`
+Execute the React app
+npm run start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---- Solidity Contract ----
+Install Hardhat (inside contract folder)
+npm i -D hardhat
+npx hardhat
+npm install --save-dev "hardhat@^2.12.2" "@nomicfoundation/hardhat-toolbox@^2.0.0"
 
-### `npm run build`
+Install Openzeppelin
+npm i @openzeppelin/contracts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dotenv
+npm i -D dotenv
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deploy contract to Goerli
+npx hardhat clean
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network goerli
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+contract address: 0xA21eBa201519F37760d86e12B9432aBb6A0B9c4b
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Verify contract
+npm i -D @nomiclabs/hardhat-etherscan
+npx hardhat verify --network goerli 0xA21eBa201519F37760d86e12B9432aBb6A0B9c4b
