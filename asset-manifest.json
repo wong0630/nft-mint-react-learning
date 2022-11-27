@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nft-mint-react-learning/static/css/main.cb5e9a86.css",
+    "main.js": "/nft-mint-react-learning/static/js/main.dd6260b5.js",
+    "static/js/942.0d672696.chunk.js": "/nft-mint-react-learning/static/js/942.0d672696.chunk.js",
+    "static/js/563.12681e67.chunk.js": "/nft-mint-react-learning/static/js/563.12681e67.chunk.js",
+    "static/js/419.6ac08c61.chunk.js": "/nft-mint-react-learning/static/js/419.6ac08c61.chunk.js",
+    "static/js/163.776b209b.chunk.js": "/nft-mint-react-learning/static/js/163.776b209b.chunk.js",
+    "static/media/parallax-bg.gif": "/nft-mint-react-learning/static/media/parallax-bg.df8992b4549f3043ac8a.gif",
+    "index.html": "/nft-mint-react-learning/index.html",
+    "main.cb5e9a86.css.map": "/nft-mint-react-learning/static/css/main.cb5e9a86.css.map",
+    "main.dd6260b5.js.map": "/nft-mint-react-learning/static/js/main.dd6260b5.js.map",
+    "419.6ac08c61.chunk.js.map": "/nft-mint-react-learning/static/js/419.6ac08c61.chunk.js.map",
+    "163.776b209b.chunk.js.map": "/nft-mint-react-learning/static/js/163.776b209b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb5e9a86.css",
+    "static/js/main.dd6260b5.js"
+  ]
+}
